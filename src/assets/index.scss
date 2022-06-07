@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+* Ditch default app layout container
+*/
+#app {
+  @apply bg-gradient-to-r from-cyan-400 to-sky-500;
+  @apply min-h-screen overflow-y-scroll;
+}
+
+.menu {
+  @apply relative flex flex-col;
+  @apply overflow-hidden p-4 rounded-xl;
+
+  &__title {
+    @apply text-3xl font-bold tracking-wide text-white;
+  }
+
+  &__items {
+    @apply flex flex-col space-y-4 mt-5;
+  }
+
+  &__item {
+    @apply relative flex items-center justify-between;
+    @apply bg-white rounded-lg px-5 py-4 shadow-md;
+    @apply cursor-pointer;
+
+    &.item {
+      &--checked {
+        @apply bg-sky-900 bg-opacity-75;
+
+        .item {
+          &__title {
+            @apply text-white;
+          }
+        }
+      }
+
+      &--disabled {
+        // @apply pointer-events-none;
+        @apply cursor-not-allowed;
+        @apply bg-red-200;
+
+        .item {
+          &__id {
+            @apply text-pink-900;
+          }
+
+          &__title {
+            @apply text-black line-through decoration-pink-500 decoration-2;
+          }
+        }
+
+        svg {
+          display: none;
+        }
+      }
+    }
+    
+    &:focus {
+      @apply outline-none;
+    }
+    
+    .item {
+      &__id {
+        @apply text-sky-200 pr-3
+      }
+
+      &__title {
+        @apply flex-1 text-sky-900;
+      }
+    }
+  }
+}
+
+.btn {
+  @apply bg-white rounded-lg shadow-lg shadow-sky-800/50;
+  @apply text-sky-900 tracking-wider;
+  @apply py-4 px-9;
+
+  &--success {
+    @apply bg-green-500 text-white shadow-2xl border-b-2 border-green-700;
+  }
+
+  &:disabled {
+    @apply cursor-not-allowed;
+  }
+}
+
+.selected-items {
+  @apply bg-white rounded-lg w-[700px] mx-auto py-3 px-4 mb-10;
+  @apply text-lg text-sky-900 underline decoration-2 decoration-green-900;
+}
