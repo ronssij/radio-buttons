@@ -9,7 +9,7 @@ Radio Buttons
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Laravel Version
+## Vue Version
 Vue 3
 Vite
 
