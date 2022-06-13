@@ -1,7 +1,20 @@
-# Vue 3 + Vite
+# StationFive
+Radio Buttons
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![ezgif-1-ec0627cfeb](https://user-images.githubusercontent.com/24932380/173359449-467bd5d6-8a56-4f96-abb7-caac82ef9350.gif)
 
-## Recommended IDE Setup
+![stationfice-radio-button](https://user-images.githubusercontent.com/24932380/173358199-092bdb51-d803-48b8-8033-3f54cf762ff8.jpg)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Laravel Version
+Vue 3
+Vite
+
+
+### Installing
+A step by step series of examples that tell you how to get a development env running
+
+* Make sure you have nodejs installed on your local machine `npm install` (v16.15.0).
